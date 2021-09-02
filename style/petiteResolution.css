@@ -1,6 +1,9 @@
 body{
     font-family: raleway;
     font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+
 }
 
 @font-face {
