@@ -31,11 +31,11 @@ body{
     align-items: center;
 }
 
-a:hover {
+.liennav:hover {
     border-top: 1px solid #0065FC ;
 }
 
-a {
+.liennav {
     padding-top: 1em;
     text-decoration: none;
     color:#0065FC;
@@ -47,13 +47,19 @@ p {
 font-size: 90%;
 }
 
-#bouton {
+#boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
-    
 }
 
+#boutonPC {
+    display: none;
+}
+
+#boutonMobile{
+    display: block;
+}
 
 
 #research {
@@ -97,8 +103,11 @@ font-size: 90%;
 .containIcon, .containIconInfo {
     width: 2em;
     height: 2em;
-    background-color: lightgray;
+    font-size: 0.5em;
+    background-color: transparent ;
     border-radius: 20px 20px 20px 20px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -110,6 +119,12 @@ input {
 
 .label {
     font-weight: bold;
+}
+
+
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
 }
 
 #blockFiltre{
@@ -165,7 +180,7 @@ h2{
     font-size: 1em;
 }
 
-.cardHebergement > p, h2, .score {
+.cardHebergement > .liencard > p, h2, .score {
     width: max-content;
     margin-left: 0.5em;
     margin-top: 0;
@@ -228,6 +243,10 @@ h2{
     display: flex;
 }
 
+.populaires > .liencard {
+    display: flex;
+}
+
 .conteneur2 {
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px ;
@@ -281,4 +300,13 @@ h2{
 .divfooter{
     margin-right: 10em;
     margin-left: 5em;
+}
+
+.liencard {
+    text-decoration: none;
+    color:black;
+}
+
+.activitesSmall, .activitesTall > .liencard > h2 {
+    font-size: 0.8em !important;
 }

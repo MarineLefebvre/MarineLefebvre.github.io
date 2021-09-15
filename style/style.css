@@ -21,11 +21,11 @@ body{
     float: right;
 }
 
-a:hover {
+.liennav:hover {
     border-top: 1px solid #0065FC ;
 }
 
-a {
+.liennav {
     padding-top: 1em;
     text-decoration: none;
     color:#0065FC;
@@ -36,10 +36,14 @@ p {
 font-size: 90%;
 }
 
-#bouton {
+#boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+}
+
+#boutonMobile{
+    display: none;
 }
 
 #research {
@@ -56,7 +60,7 @@ font-size: 90%;
     width: max-content;
     margin-top: 2em;
     margin-left: 3em;
-    height: 2em;
+    height: 1.7em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
 }
@@ -79,11 +83,23 @@ font-size: 90%;
     margin-left: 8em;
 }
 
-.containIcon, .containIconInfo {
-    width: 2em;
-    height: 2em;
-    background-color: lightgray;
-    border-radius: 20px 20px 20px 20px;
+.containIcon {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #C5E4FF ;
+    border-radius: 17px 17px 17px 17px;
+    display: flex;
+    color: lightgray;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.containresearch{
+
+    width: 1.7em;
+    height: 1.7em;
+    background-color:  #F2F2F2;
+    border-radius: 17px 5px 5px 17px;
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -95,10 +111,18 @@ input {
 
 .label {
     font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#info > .label {
+    color: gray;
+    font-size: 0.75em;
 }
 
 #blockFiltre{
     position: relative;
+    
 }
 
 #labelFiltres{
@@ -108,10 +132,24 @@ input {
     transform: translateY(-50%);
 }
 
+.containIconInfo {
+    width: 1em;
+    height: 1em;
+    font-size: 0.5em;
+    background-color: transparent ;
+    border-radius: 17px 17px 17px 17px;
+    border: solid 1px lightgray;
+    padding : 0.5em; 
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+
 #info {
     display: inline-flex;
     width: max-content;
-    height: 2em;
+    height: 0.1em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
     margin-top: 1em; 
@@ -120,7 +158,7 @@ input {
 h1 {
     font-size: 1.2em;
     margin-left: 1em;
-    margin-bottom: 1.5em;
+    
 }
 
 .disbaled{
@@ -149,7 +187,7 @@ h2{
     font-size: 1em;
 }
 
-.cardHebergement > p, h2, .score {
+.cardHebergement > .liencard > p, h2, .score {
     width: max-content;
     margin-left: 0.5em;
     margin-top: 0;
@@ -158,13 +196,12 @@ h2{
 
 .descBestSeller > p, h2 {
     width: max-content;
-    margin-left: 0.5em;
-    margin-top: 0;
-    margin-bottom: 0.3em;
+    margin-left: 0.8em;
+    margin-bottom: 0.2em;
 }
 
 .descBestSeller > h2 {
-    width: 10em;
+    width: 5em;
     word-wrap: break-word;
     white-space: normal;
 }
@@ -173,8 +210,12 @@ h2{
     display: flex;
 }
 
+.populaires > .liencard {
+    display: flex;
+}
+
 #herbegementGlobal {
-    width: 970px;
+    width: 1000px;
     padding: 1em;
     background-color:#F2F2F2;
     margin-top: 1em;
@@ -206,9 +247,11 @@ h2{
 
 .conteneur2 {
     background-color:#F2F2F2;
-    border-radius: 20px 20px 20px 20px ;
-    margin-left: 3em;
-    padding: 2em;
+    border-radius: 19px 19px 19px 19px ;
+    margin-left: 5em;
+    padding: 1em;
+    margin-top: 0.7em;
+    
 }
 
 #activites{
@@ -230,6 +273,7 @@ h2{
     width: max-content;
     box-shadow: 6px 6px 5px #F2F2F2;
 }
+
 
 .photoSmall {
     width: 13em;
@@ -255,10 +299,19 @@ h2{
 .footer{
     background-color:lightgray;
     display: flex;
-    
 }
 
 .divfooter{
-    margin-right: 10em;
+    margin-right: 15em;
     margin-left: 5em;
+    font-size: 0.75em;
+}
+
+.liencard {
+    text-decoration: none;
+    color:black;
+}
+
+.activitesSmall, .activitesTall > .liencard > h2 {
+    font-size: 0.8em !important;
 }
