@@ -8,16 +8,20 @@ body{
     src: url('../src/Raleway-Regular.ttf');
 }
 
-#navbar ol {
+#navbarPC ol {
     list-style-type: none;
     padding-left: 0;
+}
+
+#navbarMobile1, #navbarMobile2 {
+    display: none;
 }
 
 .navItem {
     display: inline-block;
 }
 
-#listItems {
+.listItems {
     float: right;
 }
 
@@ -312,6 +316,7 @@ h2{
     color:black;
 }
 
-.activitesSmall, .activitesTall > .liencard > h2 {
+.activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
     font-size: 0.8em !important;
+    padding-top: 0.4em;
 }

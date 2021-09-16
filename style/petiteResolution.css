@@ -11,9 +11,17 @@ body{
     src: url('../src/Raleway-Regular.ttf');
 }
 
-#navbar ol {
+#navbarPC ol {
     list-style-type: none;
     padding-left: 0;
+}
+
+#navbarMobile1, #navbarMobile2 {
+    display: block;
+}
+
+#navbarPC {
+    display: none;
 }
 
 .navItem {
@@ -24,7 +32,7 @@ body{
     align-self: flex-end;
 }
 
-#listItems {
+.listItems {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,13 +112,16 @@ font-size: 90%;
     width: 2em;
     height: 2em;
     font-size: 0.5em;
-    background-color: transparent ;
     border-radius: 20px 20px 20px 20px;
     border: solid 1px lightgray;
     padding : 0.5em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+.containIcon {
+    background-color: #C5E4FF !important;
 }
 
 input {
@@ -202,6 +213,7 @@ h2{
 
 #blocHebergement{
     flex-direction: column-reverse;
+    margin-left: 3em;
 }
 
 .conteneur {
@@ -258,6 +270,7 @@ h2{
 #activites{
     flex-direction: column;
     margin-top: 2em;
+    margin-left: 2em;
 }
 
 .activitesTall, .activitesSmall {
@@ -265,6 +278,7 @@ h2{
     background-color: white;
     width: max-content;
     box-shadow: 6px 6px 5px #F2F2F2;
+    margin-bottom: 0.75em;
 }
 
 .photoSmall, .photoTall {
@@ -309,4 +323,5 @@ h2{
 
 .activitesSmall, .activitesTall > .liencard > h2 {
     font-size: 0.8em !important;
+    padding-top: 0.4em;
 }
