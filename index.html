@@ -10,8 +10,6 @@
 </head>
 
 <body>
-    <!--TODO :
-    - version mobile (prévoir 2 cas dans HTML et masquer 1 des 2)-->
     <nav id="navbarPC">
         <img src="src/images/logo/Reservia.svg" alt="logo reservia">
         <ul class="listItems">
@@ -31,20 +29,22 @@
             <li class="navItem" ><a class="liennav" href="#blocHebergement">Hébérgements</a></li>
             <li class="navItem" ><a class="liennav" href="#activitesMarseille">Activités</a></li>
         </ul>
-    </nav><br>
+    </nav>
 
     <div id="titre">
         <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
         <p>En plein centre ville ou en pleine nature</p> 
     </div>
   
-    <div id="research">
-        <div class="containresearch">
-            <i id="pin" class="fa fa-map-marker icon" aria-hidden="true"></i>
+    <div id="parentResearch">
+        <div id="research">
+            <div class="containresearch">
+                <i id="pin" class="fa fa-map-marker icon" aria-hidden="true"></i>
+            </div>
+            <input type="text" placeholder="Saisir une ville">
+            <button id="boutonPC" type="button">Rechercher</button>
+            <button id="boutonMobile" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
-        <input type="text" placeholder="Saisir une ville">
-        <button id="boutonPC" type="button">Rechercher</button>
-        <button id="boutonMobile" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
     </div>
 
     <div id="blockFiltre"> 
@@ -243,7 +243,7 @@
         </div>
     </div>
 
-    <h2 id="activitesMarseille">Activités à Marseille</h2>
+    <h1 id="activitesMarseille">Activités à Marseille</h1>
     <div id="activites"> 
         <div class="activitesTall">
             <a class="liencard" href="#">

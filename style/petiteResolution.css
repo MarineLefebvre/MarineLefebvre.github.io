@@ -16,16 +16,37 @@ body{
     padding-left: 0;
 }
 
-#navbarMobile1, #navbarMobile2 {
+#navbarMobile1 {
     display: block;
+}
+
+#navbarMobile1 > .listItems{
+    font-weight: bold;
+}
+
+#navbarMobile2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbarMobile2 > .listItems{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.navItem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.navItem:hover{
+    border-bottom: 1px solid #0065FC ;
 }
 
 #navbarPC {
     display: none;
-}
-
-.navItem {
-    display: inline-block;
 }
 
 #heber, #act {
@@ -35,20 +56,18 @@ body{
 .listItems {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding-inline-start: 0px;
 }
 
 .liennav:hover {
-    border-top: 1px solid #0065FC ;
+    border-top: none;
 }
 
 .liennav {
     padding-top: 1em;
     text-decoration: none;
     color:#0065FC;
-    margin-right: 2em;
-
+    margin-right: 0;
 }
 
 p {
@@ -74,7 +93,14 @@ font-size: 90%;
     border : 1px solid lightgray;
     border-radius: 20px 15px 15px 20px;
     width: max-content;
+    height: 2em;
     display: flex;
+}
+
+#parentResearch {
+    display: flex;
+    width: 100%;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
 }
 
 .filtres{
@@ -84,6 +110,7 @@ font-size: 90%;
     width: max-content;
     margin-top: 0em;
     margin-left: 3em;
+    margin-bottom: 1em;
     height: 2em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -104,7 +131,6 @@ font-size: 90%;
 }
 
 #graph {
-    
     margin-left: 4em;
 }
 
@@ -213,7 +239,7 @@ h2{
 
 #blocHebergement{
     flex-direction: column-reverse;
-    margin-left: 3em;
+    width: 100%;
 }
 
 .conteneur {
@@ -225,11 +251,12 @@ h2{
 }
 
 #herbegementGlobal {
-    width: 320px;
-    padding: 1em;
-    background-color:#F2F2F2;
+    width: 100%;
+    padding-left: 4em;
+    background-color:white;
     margin-top: 1em;
     border-radius: 20px 20px 20px 20px;
+    justify-content: center;
 }
 
 .imagePopulaire {
@@ -259,12 +286,19 @@ h2{
     display: flex;
 }
 
+.populaires > .liencard > .descBestSeller > .score {
+    margin-top: 3em;
+}
+
 .conteneur2 {
     background-color:#F2F2F2;
-    border-radius: 20px 20px 20px 20px ;
-    width: max-content;
+    border-radius: 0;
+    /*width: max-content;*/
+    width: 100%;
     margin-left: 0em !important;
-
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
 }
 
 #activites{
@@ -294,21 +328,19 @@ h2{
 }
 
 .activitesTall, .activitesSmall{
-  margin-left: 2.5em !important;
+  margin-left: 2em !important;
   
 }
 
 #activitesMarseille {
     margin-top: 2em;
     margin-left: 4em;
-
 }
 
 .footer{
     background-color:lightgray;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .divfooter{
@@ -322,6 +354,5 @@ h2{
 }
 
 .activitesSmall, .activitesTall > .liencard > h2 {
-    font-size: 0.8em !important;
     padding-top: 0.4em;
 }
