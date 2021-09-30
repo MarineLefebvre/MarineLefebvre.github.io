@@ -214,16 +214,21 @@ h2{
     display: flex;
 }
 
+.conteneurList {
+    flex-wrap: wrap;
+}
+
 .populaires > .liencard {
     display: flex;
 }
 
 #herbegementGlobal {
-    width: 1000px;
+    width: 975px;
     padding: 1em;
     background-color:#F2F2F2;
     margin-top: 1em;
     border-radius: 20px 20px 20px 20px;
+    
 }
 
 .imagePopulaire {
@@ -252,7 +257,7 @@ h2{
 .conteneur2 {
     background-color:#F2F2F2;
     border-radius: 19px 19px 19px 19px ;
-    margin-left: 5em;
+    margin-left: 1em;
     padding: 1em;
     margin-top: 0.7em;
     
@@ -261,10 +266,11 @@ h2{
 #activites{
     display: flex;
     margin-top: 2em;
+    justify-content: space-evenly;
 }
 
 .photoTall {
-    width: 13em;
+    max-width: 100%;
     height: 15em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -280,7 +286,7 @@ h2{
 
 
 .photoSmall {
-    width: 13em;
+    width: 100%;
     height: 6em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -291,8 +297,11 @@ h2{
 }
 
 .activitesTall{
-    margin-right: 3em;
-    margin-left: 3em;
+    width: 23%;
+}
+
+.activitesSmall {
+    width: 100% !important;
 }
 
 #activitesMarseille {
@@ -318,4 +327,10 @@ h2{
 .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
     font-size: 0.8em !important;
     padding-top: 0.4em;
+    word-wrap: break-word;
+}
+
+#page {
+    max-width: 1560px;
+    margin: auto;
 }

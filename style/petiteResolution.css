@@ -39,10 +39,19 @@ body{
     width: 50%;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid lightgrey ;
 }
 
 .navItem:hover{
     border-bottom: 1px solid #0065FC ;
+}
+
+#inscriptionItem{
+    border-bottom: none !important;
+}
+
+#inscriptionItem:hover{
+    border-bottom: none !important;
 }
 
 #navbarPC {
@@ -61,13 +70,18 @@ body{
 
 .liennav:hover {
     border-top: none;
+    color:#0065FC;
 }
 
 .liennav {
     padding-top: 1em;
     text-decoration: none;
-    color:#0065FC;
+    color: gray;
     margin-right: 0;
+}
+
+#inscription {
+    color: #0065fc !important;
 }
 
 p {
@@ -91,10 +105,16 @@ font-size: 90%;
 
 #research {
     border : 1px solid lightgray;
-    border-radius: 20px 15px 15px 20px;
-    width: max-content;
-    height: 2em;
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    font-size: 1.5em;
     display: flex;
+    margin-left: 2em;
+}
+
+input {
+   width: 100%;
+   
 }
 
 #parentResearch {
@@ -135,8 +155,8 @@ font-size: 90%;
 }
 
 .containIcon, .containIconInfo {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     font-size: 0.5em;
     border-radius: 20px 20px 20px 20px;
     border: solid 1px lightgray;
@@ -148,6 +168,12 @@ font-size: 90%;
 
 .containIcon {
     background-color: #C5E4FF !important;
+}
+
+.containresearch {
+    width: 2.5em;
+    height: 2em; 
+
 }
 
 input {
@@ -186,7 +212,7 @@ input {
 }
 
 h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-left: 1em;
     margin-bottom: 1.5em;
 }
@@ -295,7 +321,8 @@ h2{
     border-radius: 0;
     /*width: max-content;*/
     width: 100%;
-    margin-left: 0em !important;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     padding-left: 4em;
@@ -341,6 +368,7 @@ h2{
     background-color:lightgray;
     display: flex;
     flex-direction: column; 
+    font-size: 1.3em;
 }
 
 .divfooter{
@@ -355,4 +383,9 @@ h2{
 
 .activitesSmall, .activitesTall > .liencard > h2 {
     padding-top: 0.4em;
+}
+
+#page{
+    max-width: none;
+    margin: 0;
 }
