@@ -223,18 +223,18 @@ h1 {
 
 .cardHebergement{
     border:white solid 2px;
-    width: max-content;
+    width: 100%;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
     margin-bottom: 2em;
-    margin-left: 1%;
+    margin-left: 0;
     background-color: white;
     box-shadow: 6px 6px 5px lightgray;
 }
 
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
-    width: 23em;
+    min-width: 100%;
     height: 8.5em;
     object-fit: cover;
 }
@@ -278,7 +278,7 @@ h2{
 
 #herbegementGlobal {
     width: 100%;
-    padding-left: 4em;
+    padding: 0;
     background-color:white;
     margin-top: 1em;
     border-radius: 20px 20px 20px 20px;
@@ -286,11 +286,10 @@ h2{
 }
 
 .imagePopulaire {
-    width: 8em;
-    height: 9em;
+    width: 12em;
+    height: 8em;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
-    
 }
 
 .descBestSeller{
@@ -302,11 +301,12 @@ h2{
     border: white solid 2px;
     margin-bottom: 2em;
     background-color: white;
-    width: 23em;
+    width: 98%;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
-    display: flex;
+    display: flex;;
 }
+
 
 .populaires > .liencard {
     display: flex;
@@ -317,6 +317,7 @@ h2{
 }
 
 .conteneur2 {
+    justify-content: center;
     background-color:#F2F2F2;
     border-radius: 0;
     /*width: max-content;*/
@@ -325,29 +326,28 @@ h2{
     padding: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 4em;
+    /*padding-left: 4em;*/
 }
 
 #activites{
     flex-direction: column;
     margin-top: 2em;
-    margin-left: 2em;
+    /*margin-left: 2em;*/ 
 }
 
 .activitesTall, .activitesSmall {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
-    width: max-content;
+    width: 100%;
     box-shadow: 6px 6px 5px #F2F2F2;
     margin-bottom: 0.75em;
 }
 
 .photoSmall, .photoTall {
-    width: 23em;
+    min-width: 100%;
     height: 8.5em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-
 }
 
 #firstActivite{
@@ -355,13 +355,11 @@ h2{
 }
 
 .activitesTall, .activitesSmall{
-  margin-left: 2em !important;
-  
+    margin-left: 0em !important;
 }
 
 #activitesMarseille {
-    margin-top: 2em;
-    margin-left: 4em;
+    margin-left: 0;
 }
 
 .footer{
@@ -383,9 +381,17 @@ h2{
 
 .activitesSmall, .activitesTall > .liencard > h2 {
     padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-size: 1.2em !important;
 }
 
 #page{
     max-width: none;
     margin: 0;
+}
+
+.activitesSmall > .liencard > h2 {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-size: 1.2em !important;
 }
