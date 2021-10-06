@@ -3,7 +3,11 @@ body{
     font-size: 0.8em;
     flex-direction: column;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
+}
 
+* {
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -11,78 +15,58 @@ body{
     src: url('../src/Raleway-Regular.ttf');
 }
 
-#navbarPC ol {
-    list-style-type: none;
-    padding-left: 0;
+
+html {
+    font-size: 80%;
 }
 
-#navbarMobile1 {
-    display: block;
+.logo {
+    flex: 1;
+    object-fit: cover;
 }
 
-#navbarMobile1 > .listItems{
-    font-weight: bold;
+nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 1rem 1rem;
 }
 
-#navbarMobile2{
+nav ul {
+    position: absolute;
+    top: 6rem;
+    left: 0px;
+    right: 0px;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
 }
 
-#navbarMobile2 > .listItems{
-    width: 100%;
-    font-size: 1.2em;
+li .menu {
+    margin: 0;
+    padding: 0;
 }
 
-.navItem {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid lightgrey ;
+li a.h {
+    font-size: 13px;
+    min-width: 187.5px;
+    padding: 1rem 4rem;
+    border-bottom: solid 2px lightgray;
 }
 
-.navItem:hover{
-    border-bottom: 1px solid #0065FC ;
+nav .menu a:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
 }
 
-#inscriptionItem{
-    border-bottom: none !important;
-}
 
-#inscriptionItem:hover{
-    border-bottom: none !important;
-}
-
-#navbarPC {
-    display: none;
-}
 
 #heber, #act {
     align-self: flex-end;
 }
 
-.listItems {
-    display: flex;
-    flex-direction: row;
-    padding-inline-start: 0px;
-}
-
-.liennav:hover {
-    border-top: none;
-    color:#0065FC;
-}
-
-.liennav {
-    padding-top: 1em;
-    text-decoration: none;
-    color: gray;
-    margin-right: 0;
-}
-
-#inscription {
-    color: #0065fc !important;
-}
 
 p {
 font-size: 90%;
@@ -109,7 +93,7 @@ font-size: 90%;
     width: 100%;
     font-size: 1.5em;
     display: flex;
-    margin-left: none !important;
+    margin-left: 0 !important;
 }
 
 input {
