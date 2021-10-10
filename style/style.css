@@ -381,6 +381,6 @@ h2{
 }
 
 #page {
-    max-width: 1560px;
+    width: 80%;
     margin: auto;
 }
