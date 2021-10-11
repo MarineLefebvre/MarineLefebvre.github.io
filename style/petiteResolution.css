@@ -3,6 +3,7 @@ body{
     font-size: 0.8em;
     flex-direction: column;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
+    width: 85%;
 }
 
 * {
@@ -372,6 +373,7 @@ h2{
 #page{
     max-width: none;
     margin: 0;
+    width: 100%;
 }
 
 .activitesSmall > .liencard > h2 {
