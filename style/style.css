@@ -19,11 +19,9 @@ body {
 
 #inscription{
     color: #0065FC;
-    margin-top: 1em;
 }
 
 nav {
-    padding: 1rem 0rem;
     margin: 0rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -38,6 +36,7 @@ nav {
     flex: 1;
     padding-top: 1rem;
 }
+
 .logo a {
     position: absolute;
     top: 3rem;
@@ -50,7 +49,6 @@ nav img {
 
 nav ul {
     position: absolute;
-    top: 1.9rem;
     right: 9rem;
     display: flex;
     justify-content: space-between;
@@ -70,30 +68,32 @@ nav .menu {
     justify-content: space-between;
     flex: 1;
     padding: 0rem;
+    padding-top: 1em;
+    margin-top: 1em;
 }
-nav .S {
-    font-weight: bold;
-    padding-right: 0rem;
-    padding-top: 1rem;
-}
+
 nav .menu a {
     padding-top: 1rem;
     padding: 1rem 2rem;
     border-top: 2px solid rgb(255, 255, 255);
 }
 
-nav .menu a:hover {
-    color: #0065fc;
+nav .menu:hover {
     border-top: 2px solid #0065fc;
 }
 
-p {
+nav .menu a:hover {
+    color: #0065fc;
 }
+
 
 #boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 
 #boutonMobile{
@@ -113,7 +113,16 @@ p {
     border-radius: 20px 20px 20px 20px;
     width: max-content;
     margin-top: 2em;
-    margin-left: 3em;
+    margin-left: 1em;
+    height: 1.7em;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+}
+
+#blocLabelFiltres{
+    display: inline-flex;
+    width: max-content;
+    margin-top: 2em;
     height: 1.7em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -123,7 +132,7 @@ p {
     background-color: lightgray; 
 }
 
-.icon, .iconInfo {
+.icon, .iconInfo, .iconfiltres {
     color: #0065FC;
     font-size: 1em;
 }
@@ -161,6 +170,7 @@ p {
 
 input {
     border: 0;
+    padding-left: 1em;
 }
 
 .label {
@@ -180,10 +190,7 @@ input {
 }
 
 #labelFiltres{
-    display: inline-flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    font-weight: bold;
 }
 
 .containIconInfo {
@@ -193,7 +200,7 @@ input {
     background-color: transparent ;
     border-radius: 17px 17px 17px 17px;
     border: solid 1px lightgray;
-    padding : 0.5em; 
+    padding : 1em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -215,12 +222,17 @@ h1 {
     
 }
 
+#plus {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 .disbaled{
     color: grey !important;
 }
 
 .cardHebergement{
-    border:white solid 2px;
+    border:white solid 4px;
     width: max-content;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
@@ -255,7 +267,7 @@ h2{
 }
 
 .descBestSeller > h2 {
-    width: 5em;
+    width: 9em;
     word-wrap: break-word;
     white-space: normal;
 }
@@ -273,12 +285,11 @@ h2{
 }
 
 #herbegementGlobal {
-    width: 100%;
+    width: 46em;
     padding: 1em;
     background-color:#F2F2F2;
     margin-top: 1em;
     border-radius: 20px 20px 20px 20px;
-    
 }
 
 .imagePopulaire {
@@ -299,7 +310,7 @@ h2{
     border: white solid 2px;
     margin-bottom: 2em;
     background-color: white;
-    width: 20em;
+    width: 23em;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
 }
@@ -347,7 +358,7 @@ h2{
 }
 
 .activitesTall{
-    width: 23%;
+    width: 22%;
 }
 
 .activitesSmall {
@@ -360,7 +371,7 @@ h2{
 }
 
 .footer{
-    background-color:lightgray;
+    background-color:#F2F2F2;
     display: flex;
     justify-content: space-around;
 }
@@ -380,7 +391,12 @@ h2{
     word-wrap: break-word;
 }
 
+.groupActivites{
+    width: 22%;
+}
+
 #page {
-    width: 80%;
+    width: 95%;
     margin: auto;
+    max-width: 1580px;
 }

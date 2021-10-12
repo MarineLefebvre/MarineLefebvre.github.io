@@ -62,6 +62,21 @@ nav .menu a:hover {
     border-top: none;
 }
 
+nav .menu:hover {
+    border-top: none;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+#subtitle{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+}
 
 
 #heber, #act {
@@ -76,7 +91,6 @@ font-size: 90%;
 #boutonPC, #boutonMobile {
     background-color: #0065FC;
     color: white;
-    border-radius: 0px 10px 10px 0px;
 }
 
 #boutonPC {
@@ -85,16 +99,18 @@ font-size: 90%;
 
 #boutonMobile{
     display: block;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
 #research {
     border : 1px solid lightgray;
     border-radius: 15px 15px 15px 15px;
-    width: 100%;
+    width: 80%;
     font-size: 1.5em;
     display: flex;
     margin-left: 0 !important;
+    margin-bottom: 2em;
 }
 
 input {
@@ -116,6 +132,8 @@ input {
     margin-top: 0em;
     margin-left: 3em;
     margin-bottom: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     height: 2em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -128,7 +146,11 @@ input {
 
 .icon, .iconInfo {
     color: #0065FC;
-    font-size: 1em;
+    font-size: 2em;
+}
+
+.iconfiltres {
+    font-size: 3em;
 }
 
 #pin, #graph {
@@ -136,7 +158,13 @@ input {
 }
 
 #graph {
-    margin-left: 4em;
+    margin-left: 6em;
+    margin-top: 0.5em;
+}
+
+.containIcon{
+    width: 6em !important;
+    height: 6em !important;
 }
 
 .containIcon, .containIconInfo {
@@ -167,23 +195,33 @@ input {
 
 .label {
     font-weight: bold;
+    font-size: 1.4em;
+    padding: 1em;
 }
 
 
 #info > .label {
     color: gray;
-    font-size: 0.75em;
+    font-size: 1.3em;
+    width: 80%;
+    word-wrap: break-word;
+    padding-top: 2em;
 }
 
 #blockFiltre{
     position: relative;
     flex-direction: column;
-    
+    margin-bottom: 2em; 
 }
 
 #labelFiltres{
-   position: relative !important;
-   display: block;
+   font-size: 1.5em;
+   margin-left: 0.5em;
+}
+
+#blocLabelFiltres {
+    display: block;
+    margin-bottom: 1.5em;
 }
 
 #info {
@@ -192,12 +230,13 @@ input {
     height: 2em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
-    margin-top: 1em; 
-   
+    margin-top: 1em;
+    margin-bottom: 2em;   
 }
 
+
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-left: 1em;
     margin-bottom: 1.5em;
 }
@@ -208,7 +247,7 @@ h1 {
 
 .cardHebergement{
     border:white solid 2px;
-    width: 100%;
+    width: 87%;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
     margin-bottom: 2em;
@@ -246,7 +285,24 @@ h2{
     width: 10em;
     word-wrap: break-word;
     white-space: normal;
+    font-size: 1.7em;
 }
+
+.liencard > h2 {
+    font-size: 1.7em;
+}
+
+.descBestSeller > p{
+    width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 1.3em;
+}
+
+.liencard > p{
+    font-size: 1.3em;
+}
+
 
 #blocHebergement{
     flex-direction: column-reverse;
@@ -268,11 +324,13 @@ h2{
     margin-top: 1em;
     border-radius: 20px 20px 20px 20px;
     justify-content: center;
+    margin-left: 0;
+    padding-left: 2.5em;
 }
 
 .imagePopulaire {
-    width: 12em;
-    height: 8em;
+    width: 10em;
+    height: 13em;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
@@ -286,10 +344,11 @@ h2{
     border: white solid 2px;
     margin-bottom: 2em;
     background-color: white;
-    width: 98%;
+    width: 90%;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
-    display: flex;;
+    display: flex;
+
 }
 
 
@@ -306,18 +365,18 @@ h2{
     background-color:#F2F2F2;
     border-radius: 0;
     /*width: max-content;*/
-    width: 100%;
+    width: 98%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /*padding-left: 4em;*/
+    padding-left: 2.5em;
 }
 
 #activites{
     flex-direction: column;
     margin-top: 2em;
-    /*margin-left: 2em;*/ 
+    margin-left: 2.5em;
 }
 
 .activitesTall, .activitesSmall {
@@ -341,17 +400,19 @@ h2{
 
 .activitesTall, .activitesSmall{
     margin-left: 0em !important;
+    width: 90%;
 }
 
 #activitesMarseille {
-    margin-left: 0;
+    margin-left: 1em;
 }
 
 .footer{
-    background-color:lightgray;
+    background-color:#F2F2F2;
     display: flex;
     flex-direction: column; 
     font-size: 1.3em;
+    width: 99%;
 }
 
 .divfooter{
@@ -370,14 +431,24 @@ h2{
     font-size: 1.2em !important;
 }
 
+.groupActivites{
+    width: 90%;
+}
+
 #page{
     max-width: none;
     margin: 0;
     width: 100%;
+    
 }
+
 
 .activitesSmall > .liencard > h2 {
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     font-size: 1.2em !important;
+}
+
+.divfooter > h3{
+    margin: 0 !important;
 }
