@@ -94,7 +94,9 @@ nav .menu a:hover {
     font-weight: bold;
     padding-right: 0.5em;
     padding-left: 0.5em;
+    border : none;
 }
+
 
 #boutonMobile{
     display: none;
