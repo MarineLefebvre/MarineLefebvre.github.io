@@ -53,7 +53,9 @@ li a.h {
     font-size: 13px;
     min-width: 187.5px;
     padding: 1rem 4rem;
+    width: 100%;
     border-bottom: solid 2px lightgray;
+    padding-left: 40%;
 }
 
 nav .menu a:hover {
@@ -470,5 +472,65 @@ h2{
 
     nav ul {
         width: 97%;
+    }
+}
+
+@media screen and (min-width: 400px)
+{
+    .descBestSeller > h2 {
+        width: 18em;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 2.2em;
+    }
+
+    .liencard > h2 {
+        font-size: 2.2em;
+    }
+
+    .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
+        font-size: 2.2em !important;
+    }
+
+    .cardHebergement {
+        height: 27em;
+    }
+
+    .photoSmall, .photoTall {
+        height: 12em !important;
+    }
+
+    h1, #graph{
+        font-size: 3em !important;
+    }
+
+    .imagePopulaire {
+        width: 20em;
+        height: 23em;
+    }
+
+    .imageHebergement {
+        height: 17em;
+    }
+
+    .populaires > .liencard > .descBestSeller > .score {
+        margin-top: 6em;
+    }
+
+    .populaires {
+        width: 90%;
+    }
+
+    #info > .label {
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    #plus {
+        font-size: 2em;
+    }
+
+    #inscription {
+        font-size: 2em;
     }
 }
