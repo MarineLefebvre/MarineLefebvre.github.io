@@ -1,3 +1,33 @@
 .imageHebergement {
-    width: 11.3em;
+    width: 12em;
+}
+
+.logo {
+    width: 80px;
+}
+
+.logo a {
+    top : 2.7rem;
+}
+
+.cardHebergement{
+    border: transparent solid 2.5px;
+}
+
+.populaires{
+    border: transparent solid 2.5px;
+}
+
+@media screen and (max-width: 1050px)
+{
+    body{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    body{
+        font-size: 70%;
+    }
 }

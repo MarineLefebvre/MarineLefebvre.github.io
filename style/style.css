@@ -22,7 +22,6 @@ body {
 }
 
 nav {
-    margin: 0rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,22 +102,24 @@ nav .menu a:hover {
 }
 
 #research {
-    border : 1px solid lightgray;
-    border-radius: 20px 15px 15px 20px;
+    border : 1px solid #F2F2F2;
+    border-radius: 14px 15px 15px 14px;
     width: max-content;
     display: flex;
 }
 
 .filtres{
     display: inline-flex;
-    border : 1px solid lightgray;
+    border : 2px solid #F2F2F2;
     border-radius: 20px 20px 20px 20px;
     width: max-content;
     margin-top: 2em;
     margin-left: 1em;
-    height: 1.7em;
+    height: 1.8em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #blocLabelFiltres{
@@ -149,10 +150,10 @@ nav .menu a:hover {
 }
 
 .containIcon {
-    width: 1.7em;
-    height: 1.7em;
+    width: 2.1em;
+    height: 2.1em;
     background-color: #C5E4FF ;
-    border-radius: 17px 17px 17px 17px;
+    border-radius: 21px 21px 21px 21px;
     display: flex;
     color: lightgray;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
@@ -164,7 +165,7 @@ nav .menu a:hover {
     width: 1.7em;
     height: 1.7em;
     background-color:  #F2F2F2;
-    border-radius: 17px 5px 5px 17px;
+    border-radius: 10px 0px 0px 10px;
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
@@ -182,7 +183,7 @@ input {
 }
 
 #info > .label {
-    color: gray;
+    color: black;
     font-size: 0.75em;
 }
 
@@ -226,7 +227,7 @@ h1 {
 
 #plus {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .disbaled{
@@ -234,7 +235,7 @@ h1 {
 }
 
 .cardHebergement{
-    border:white solid 4px;
+    border: transparent solid 4px;
     width: max-content;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
@@ -242,12 +243,13 @@ h1 {
     margin-left: 1%;
     background-color: white;
     box-shadow: 6px 6px 5px lightgray;
+    height: 11em;
 }
 
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
     width: 12.5em;
-    height: 8.5em;
+    height: 55%;
     object-fit: cover;
 }
 
@@ -262,7 +264,7 @@ h2{
     margin-bottom: 0.3em;
 }
 
-.descBestSeller > p, h2 {
+.descBestSeller > p, .descBestSeller> h2 {
     width: max-content;
     margin-left: 0.8em;
     margin-bottom: 0.2em;
@@ -296,7 +298,7 @@ h2{
 
 .imagePopulaire {
     width: 8em;
-    height: 9em;
+    height: 7em;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     
@@ -309,10 +311,9 @@ h2{
 
 .populaires{
     border-radius: 20px 20px 20px 20px;
-    border: white solid 2px;
+    border: transparent solid 4px;
     margin-bottom: 2em;
     background-color: white;
-    width: 23em;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
 }
@@ -334,7 +335,7 @@ h2{
 
 .photoTall {
     max-width: 100%;
-    height: 15em;
+    height: 18em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -350,7 +351,7 @@ h2{
 
 .photoSmall {
     width: 100%;
-    height: 6em;
+    height: 7.5em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -360,16 +361,15 @@ h2{
 }
 
 .activitesTall{
-    width: 22%;
+    width: 20%;
 }
 
 .activitesSmall {
     width: 100% !important;
 }
 
-#activitesMarseille {
+#blocActivites {
     margin-top: 2em;
-    margin-left: 4em;
 }
 
 .footer{
