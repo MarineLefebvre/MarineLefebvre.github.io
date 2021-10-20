@@ -26,6 +26,11 @@ html {
     object-fit: cover;
 }
 
+.logo a {
+    top: 4em !important;
+    font-size: 1rem;
+}
+
 nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -69,13 +74,13 @@ nav .menu:hover {
 }
 
 h3{
-    font-size: 2em;
+    font-size: 4em;
     font-weight: bold;
     margin-left: 0.5em;
 }
 
 #subtitle{
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 2em;
     margin-left: 0.5em;
 }
@@ -102,6 +107,7 @@ font-size: 90%;
 #boutonMobile{
     display: block;
     border-radius: 10px 10px 10px 10px;
+    width: 45px;
 }
 
 
@@ -116,8 +122,8 @@ font-size: 90%;
 }
 
 input {
+   height: 35px;
    width: 100%;
-   
 }
 
 #parentResearch {
@@ -136,7 +142,7 @@ input {
     margin-bottom: 1em;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    height: 2em;
+    height: 6em;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
 
@@ -161,7 +167,7 @@ input {
 }
 
 #pin{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 #graph {
@@ -170,29 +176,42 @@ input {
 }
 
 .containIcon{
-    width: 6em !important;
-    height: 6em !important;
+    width: 35px !important;
+    height: 35px !important;
 }
 
 .containIcon, .containIconInfo {
     width: 3em;
     height: 3em;
-    font-size: 0.5em;
+    font-size: 1em;
     border-radius: 20px 20px 20px 20px;
-    border: solid 1px lightgray;
+    /*border: solid 1px lightgray;*/
     padding : 0.5em; 
     display: flex;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
 }
 
++.containIconInfo {
+    width: 3em;
+    height: 3em;
+    font-size: 5px;
+    border-radius: 20px 20px 20px 20px;
+    /*border: solid 1px lightgray;*/
+    padding : 0.5em;
+    display: flex;
+    justify-content: center; /*Centrer horizontalement grace a flex box*/
+    align-items: center; /*Centrer verticalement grace a flex box*/
+    }
+
 .containIcon {
     background-color: #C5E4FF !important;
 }
 
 .containresearch {
-    width: 2.5em;
-    height: 2em;
+    width: 45px;
+    height: 35px;
+    
 }
 
 input {
@@ -201,14 +220,14 @@ input {
 
 .label {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 2.4em;
     padding: 1em;
 }
 
 
 #info > .label {
     color: gray;
-    font-size: 1.3em;
+    font-size: 2.3em;
     width: 80%;
     word-wrap: break-word;
     padding-top: 2em;
@@ -221,8 +240,9 @@ input {
 }
 
 #labelFiltres{
-   font-size: 1.5em;
+   font-size: 3em;
    margin-left: 0.5em;
+   padding-bottom: 2em;
 }
 
 #blocLabelFiltres {
@@ -253,20 +273,20 @@ h1 {
 
 .cardHebergement{
     border: transparent solid 2px;
-    width: 87%;
+    width: 97%;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
     margin-bottom: 2em;
     margin-left: 0;
     background-color: white;
     box-shadow: 6px 6px 5px lightgray;
-    height: 16.5em;
+    height: 33em;
 }
 
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
     min-width: 100%;
-    height: 8.5em;
+    height: 20em !important;
     object-fit: cover;
 }
 
@@ -285,31 +305,35 @@ h2{
     width: max-content;
     margin-left: 0.5em;
     margin-top: 0;
-    margin-bottom: 0.3em;
+    margin-bottom: 0em !important; 
 }
 
 .descBestSeller > h2 {
     width: 10em;
     word-wrap: break-word;
     white-space: normal;
-    font-size: 1.7em;
+    font-size: 3.2em;
+    margin-bottom: 1em;
 }
 
-.liencard > h2 {
-    font-size: 1.7em;
+.liencard > h2, .cardHebergement > .liencard > p {
+    font-size: 2em;
 }
 
 .descBestSeller > p{
     width: 10em;
     word-wrap: break-word;
     white-space: normal;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 .liencard > p{
     font-size: 1.3em;
 }
 
+p{
+    padding-bottom: 3em;
+}
 
 #blocHebergement{
     flex-direction: column-reverse;
@@ -336,10 +360,10 @@ h2{
 }
 
 .imagePopulaire {
-    width: 10em;
-    height: 13em;
+    width: 25em;
+    height: 20em;
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .descBestSeller{
@@ -351,7 +375,7 @@ h2{
     border: transparent solid 2px;
     margin-bottom: 2em;
     background-color: white;
-    width: 90%;
+    width: 99% !important;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
     display: flex;
@@ -364,7 +388,7 @@ h2{
 }
 
 .populaires > .liencard > .descBestSeller > .score {
-    margin-top: 3em;
+    margin-top: 0em;
 }
 
 .conteneur2 {
@@ -378,6 +402,7 @@ h2{
     display: flex;
     flex-direction: column;
     padding-left: 2.5em;
+    margin-top: 3em;
 }
 
 #activites{
@@ -438,9 +463,15 @@ h2{
     font-size: 1.2em !important;
 }
 
+.cardHebergement > .liencard > p {
+    padding-bottom: 1em !important;
+}
+
 .groupActivites{
     width: 90%;
 }
+
+
 
 #page{
     max-width: none;
@@ -457,6 +488,12 @@ h2{
 
 .divfooter > h3{
     margin: 0 !important;
+    font-size: 2em;
+}
+
+.divfooter > p {
+    font-size: 1.5em;
+    padding-bottom: 1em!important;
 }
 
 @media screen and (max-width: 375px)
@@ -478,14 +515,18 @@ h2{
 @media screen and (min-width: 400px)
 {
     .descBestSeller > h2 {
-        width: 18em;
+        width: 15em;
         word-wrap: break-word;
         white-space: normal;
-        font-size: 2.2em;
+        font-size: 2.7em;
+    }
+
+    .descBestSeller > p {
+        margin-top: 2em;
     }
 
     .liencard > h2 {
-        font-size: 2.2em;
+        font-size: 2.7em;
     }
 
     .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
@@ -493,11 +534,11 @@ h2{
     }
 
     .cardHebergement {
-        height: 27em;
+        height: 33em;
     }
 
     .photoSmall, .photoTall {
-        height: 12em !important;
+        height: 18em !important;
     }
 
     h1, #graph{
@@ -510,11 +551,12 @@ h2{
     }
 
     .imageHebergement {
-        height: 17em;
+        height: 50em;
+
     }
 
     .populaires > .liencard > .descBestSeller > .score {
-        margin-top: 6em;
+        margin-top: 2em;
     }
 
     .populaires {
@@ -533,4 +575,15 @@ h2{
     #inscription {
         font-size: 2em;
     }
+
+    
+    .footer > .divfooter > h3 {
+        font-size: 2.5em;
+    }
+
+    .footer > .divfooter > p {
+        font-size: 1.5em;
+        padding-bottom: 1em!important;
+    }
+
 }
