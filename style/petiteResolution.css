@@ -192,17 +192,9 @@ input {
     align-items: center; /*Centrer verticalement grace a flex box*/
 }
 
-+.containIconInfo {
-    width: 3em;
-    height: 3em;
+.containIconInfo {
     font-size: 5px;
-    border-radius: 20px 20px 20px 20px;
-    /*border: solid 1px lightgray;*/
-    padding : 0.5em;
-    display: flex;
-    justify-content: center; /*Centrer horizontalement grace a flex box*/
-    align-items: center; /*Centrer verticalement grace a flex box*/
-    }
+}
 
 .containIcon {
     background-color: #C5E4FF !important;
