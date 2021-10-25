@@ -5,6 +5,8 @@ body{
     flex-direction: column;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
 }
+    width: 95%;
+}
 
 * {
     padding: 0;
@@ -173,6 +175,8 @@ input {
 #graph {
     margin-left: 9em;
     margin-top: 0.5em;
+    margin-left: 6em;
+    margin-top: 0.5em;
 }
 
 .containIcon{
@@ -224,6 +228,10 @@ input {
     word-wrap: break-word;
     padding-top: 2em;
     padding-left: 0.5em !important;
+    font-size: 2.3em;
+    width: 80%;
+    word-wrap: break-word;
+    padding-top: 2em;
 }
 
 #blockFiltre{
@@ -243,6 +251,11 @@ input {
     margin-bottom: 3em;
 }
 
+#blocLabelFiltres {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
 #info {
     display: inline-flex;
     width: max-content;
@@ -252,6 +265,8 @@ input {
     margin-top: 1em;
     margin-bottom: 2em;
     padding-left: 1.5em;   
+    margin-top: 1em;
+    margin-bottom: 2em;   
 }
 
 
@@ -329,6 +344,25 @@ p{
     padding-bottom: 1em!important;
 }
 
+.liencard > h2, .cardHebergement > .liencard > p {
+    font-size: 2em;
+}
+
+.descBestSeller > p{
+    width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 2em;
+}
+
+.liencard > p{
+    font-size: 1.3em;
+}
+
+p{
+    padding-bottom: 3em;
+}
+
 #blocHebergement{
     flex-direction: column-reverse;
     width: 100%;
@@ -402,6 +436,7 @@ p{
     flex-direction: column;
     margin-top: 2em;
     margin-left: 1.5%;
+    margin-left: 2.5em;
 }
 
 .activitesTall, .activitesSmall {
@@ -426,6 +461,8 @@ p{
 .activitesTall, .activitesSmall{
     margin-left: 0em !important;
     width: 97%;
+    margin-left: 0em !important;
+    width: 90%;
 }
 
 #blocActivites {
@@ -462,6 +499,16 @@ p{
 
 .groupActivites{
     width: 97%;
+}
+
+
+
+.cardHebergement > .liencard > p {
+    padding-bottom: 1em !important;
+}
+
+.groupActivites{
+    width: 90%;
 }
 
 
@@ -619,4 +666,113 @@ h1, #graph{
     #inscription {
         font-size: 2em;
     }
+}
+
+
+.activitesSmall > .liencard > h2 {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-size: 1.2em !important;
+}
+
+.divfooter > h3{
+    margin: 0 !important;
+    font-size: 2em;
+}
+
+.divfooter > p {
+    font-size: 1.5em;
+    padding-bottom: 1em!important;
+}
+
+@media screen and (max-width: 375px)
+{
+    body
+    {
+        padding-left : 0.9em;
+    }
+
+    .footer{
+        width: 97%;
+    }
+
+    nav ul {
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 400px)
+{
+    .descBestSeller > h2 {
+        width: 15em;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 2.7em;
+    }
+
+    .descBestSeller > p {
+        margin-top: 2em;
+    }
+
+    .liencard > h2 {
+        font-size: 2.7em;
+    }
+
+    .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
+        font-size: 2.2em !important;
+    }
+
+    .cardHebergement {
+        height: 33em;
+    }
+
+    .photoSmall, .photoTall {
+        height: 18em !important;
+    }
+
+    h1, #graph{
+        font-size: 3em !important;
+    }
+
+    .imagePopulaire {
+        width: 20em;
+        height: 23em;
+    }
+
+    .imageHebergement {
+        height: 50em;
+
+    }
+
+    .populaires > .liencard > .descBestSeller > .score {
+        margin-top: 2em;
+    }
+
+    .populaires {
+        width: 90%;
+    }
+
+    #info > .label {
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    #plus {
+        font-size: 2em;
+    }
+
+    #inscription {
+        font-size: 2em;
+    }
+
+    
+    .footer > .divfooter > h3 {
+        font-size: 2.5em;
+    }
+
+    .footer > .divfooter > p {
+        font-size: 1.5em;
+        padding-bottom: 1em!important;
+    }
+
 }
