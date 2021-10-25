@@ -1,9 +1,9 @@
 body{
     font-family: raleway;
     font-size: 0.8em;
+    margin: 0;
     flex-direction: column;
     justify-content: center; /*Centrer horizontalement grace a flex box*/
-    width: 95%;
 }
 
 * {
@@ -171,7 +171,7 @@ input {
 }
 
 #graph {
-    margin-left: 6em;
+    margin-left: 9em;
     margin-top: 0.5em;
 }
 
@@ -223,6 +223,7 @@ input {
     width: 80%;
     word-wrap: break-word;
     padding-top: 2em;
+    padding-left: 0.5em !important;
 }
 
 #blockFiltre{
@@ -239,7 +240,7 @@ input {
 
 #blocLabelFiltres {
     display: block;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
 }
 
 #info {
@@ -249,7 +250,8 @@ input {
     justify-content: center; /*Centrer horizontalement grace a flex box*/
     align-items: center; /*Centrer verticalement grace a flex box*/
     margin-top: 1em;
-    margin-bottom: 2em;   
+    margin-bottom: 2em;
+    padding-left: 1.5em;   
 }
 
 
@@ -324,7 +326,7 @@ h2{
 }
 
 p{
-    padding-bottom: 3em;
+    padding-bottom: 1em!important;
 }
 
 #blocHebergement{
@@ -390,7 +392,6 @@ p{
     /*width: max-content;*/
     width: 98%;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     padding-left: 2.5em;
@@ -400,7 +401,7 @@ p{
 #activites{
     flex-direction: column;
     margin-top: 2em;
-    margin-left: 2.5em;
+    margin-left: 1.5%;
 }
 
 .activitesTall, .activitesSmall {
@@ -424,7 +425,7 @@ p{
 
 .activitesTall, .activitesSmall{
     margin-left: 0em !important;
-    width: 90%;
+    width: 97%;
 }
 
 #blocActivites {
@@ -460,7 +461,7 @@ p{
 }
 
 .groupActivites{
-    width: 90%;
+    width: 97%;
 }
 
 
@@ -480,6 +481,8 @@ p{
 
 .divfooter > h3{
     margin: 0 !important;
+    margin-bottom: 20px!important;
+    margin-top: 20px!important;
     font-size: 2em;
 }
 
@@ -487,6 +490,74 @@ p{
     font-size: 1.5em;
     padding-bottom: 1em!important;
 }
+
+#plus {
+    font-size: 2em;
+}
+
+.photoSmall, .photoTall {
+    height: 18em !important;
+}
+
+h1, #graph{
+    font-size: 3em !important;
+}
+
+.activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
+    font-size: 2.2em !important;
+}
+
+.liencard > h2 {
+    font-size: 2.7em;
+}
+
+.footer > .divfooter > h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.footer > .divfooter > p {
+    font-size: 3em;
+    padding-bottom: 1em!important;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 321px)
+{
+    body {
+        font-size: 39%!important;
+    }
+}
+
+@media screen and (max-width: 365px)
+{
+    body {
+        font-size: 35%!important;
+    }
+
+    .containIcon{
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+
+@media screen and (max-width: 430px)
+{
+    .cardHebergement {
+        height: 29em;
+    }
+    
+    .imageHebergement {
+        height: 18em !important;
+    }
+    
+    .cardHebergement > .liencard > p {
+        padding-bottom: 0em !important;
+    }
+}
+
 
 @media screen and (max-width: 375px)
 {
@@ -502,10 +573,7 @@ p{
     nav ul {
         width: 97%;
     }
-}
 
-@media screen and (min-width: 400px)
-{
     .descBestSeller > h2 {
         width: 15em;
         word-wrap: break-word;
@@ -517,25 +585,10 @@ p{
         margin-top: 2em;
     }
 
-    .liencard > h2 {
-        font-size: 2.7em;
-    }
-
-    .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
-        font-size: 2.2em !important;
-    }
-
     .cardHebergement {
-        height: 33em;
+        height: 28em;
     }
 
-    .photoSmall, .photoTall {
-        height: 18em !important;
-    }
-
-    h1, #graph{
-        font-size: 3em !important;
-    }
 
     .imagePopulaire {
         width: 20em;
@@ -543,8 +596,11 @@ p{
     }
 
     .imageHebergement {
-        height: 50em;
+        height: 17em !important;
+    }
 
+    .cardHebergement > .liencard > p {
+        padding-bottom: 0em !important;
     }
 
     .populaires > .liencard > .descBestSeller > .score {
@@ -560,22 +616,7 @@ p{
         padding-top: 1em;
     }
 
-    #plus {
-        font-size: 2em;
-    }
-
     #inscription {
         font-size: 2em;
     }
-
-    
-    .footer > .divfooter > h3 {
-        font-size: 2.5em;
-    }
-
-    .footer > .divfooter > p {
-        font-size: 1.5em;
-        padding-bottom: 1em!important;
-    }
-
 }
