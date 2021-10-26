@@ -267,11 +267,11 @@ h1 {
 
 .cardHebergement{
     border: transparent solid 2px;
-    width: 97%;
+    width: 92%;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 2%;
+    margin-right: 0;
     margin-bottom: 2em;
-    margin-left: 0;
+    margin-left: 1em;
     background-color: white;
     box-shadow: 6px 6px 5px lightgray;
     height: 33em;
@@ -280,7 +280,7 @@ h1 {
 .imageHebergement {
     border-radius: 20px 20px 0px 0px;
     min-width: 100%;
-    height: 20em !important;
+    height: 22em !important;
     object-fit: cover;
 }
 
@@ -368,8 +368,9 @@ p{
     border-radius: 20px 20px 20px 20px;
     border: transparent solid 2px;
     margin-bottom: 2em;
+    margin-left: 1.3em;
     background-color: white;
-    width: 99% !important;
+    width: 95% !important;
     align-items: center;
     box-shadow: 6px 6px 5px lightgray;
     display: flex;
@@ -390,12 +391,13 @@ p{
     background-color:#F2F2F2;
     border-radius: 0;
     /*width: max-content;*/
-    width: 98%;
+    width: 94%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 2.5em;
     margin-top: 3em;
+    padding: 0em;
+    margin-left: 1.5em!important;
 }
 
 #activites{
@@ -409,7 +411,7 @@ p{
     background-color: white;
     width: 100%;
     box-shadow: 6px 6px 5px #F2F2F2;
-    margin-bottom: 0.75em;
+    margin-bottom: 3em;
 }
 
 .photoSmall, .photoTall {
@@ -424,8 +426,16 @@ p{
 }
 
 .activitesTall, .activitesSmall{
-    margin-left: 0em !important;
-    width: 97%;
+    margin-left: 2em !important;
+
+}
+
+.activitesTall{
+    width: 90% !important;
+}
+
+.activitesSmall{
+    width: 92% !important;
 }
 
 #blocActivites {
@@ -495,8 +505,12 @@ p{
     font-size: 2em;
 }
 
-.photoSmall, .photoTall {
-    height: 18em !important;
+.photoSmall {
+    height: 19em !important;
+}
+
+.photoTall {
+    height: 24em !important;
 }
 
 h1, #graph{
@@ -504,7 +518,9 @@ h1, #graph{
 }
 
 .activitesSmall > .liencard > h2, .activitesTall > .liencard > h2 {
-    font-size: 2.2em !important;
+    font-size: 15px !important;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
 }
 
 .liencard > h2 {
@@ -526,7 +542,24 @@ h1, #graph{
 @media screen and (max-width: 321px)
 {
     body {
-        font-size: 39%!important;
+        font-size: 50%!important;
+        width: 100%!important;
+    }
+
+    .conteneur2{
+        width: 100%;
+    }
+
+    .cardHebergement{
+        width: 100%;
+    }
+
+    .activitesSmall,.activitesTall{
+        width: 100%!important;
+    }
+
+    .footer{
+        width: 100%;
     }
 }
 
@@ -546,11 +579,11 @@ h1, #graph{
 @media screen and (max-width: 430px)
 {
     .cardHebergement {
-        height: 29em;
+        height: 30em;
     }
     
     .imageHebergement {
-        height: 18em !important;
+        height: 19em !important;
     }
     
     .cardHebergement > .liencard > p {
@@ -585,18 +618,10 @@ h1, #graph{
         margin-top: 2em;
     }
 
-    .cardHebergement {
-        height: 28em;
-    }
-
 
     .imagePopulaire {
         width: 20em;
         height: 23em;
-    }
-
-    .imageHebergement {
-        height: 17em !important;
     }
 
     .cardHebergement > .liencard > p {
