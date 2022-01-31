@@ -18,6 +18,7 @@ a:hover {
     cursor: pointer;
 }
 
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -57,6 +58,8 @@ a:hover {
     padding: 20px 50px;
 }
 
+
+
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -92,7 +95,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -754,7 +756,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: grey;
     padding: 40px 40px 40px 40px;
 }
 
